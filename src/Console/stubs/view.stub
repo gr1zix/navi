@@ -1,10 +1,12 @@
+@use('Log1x\Navi\Navi')
+
 @props([
   'name' => {{ default }},
   'inactive' => 'hover:text-blue-500',
   'active' => 'text-blue-500',
 ])
 
-@php($menu = Navi::build($name))
+@php($menu = Navi::make()->build($name))
 
 @if ($menu->isNotEmpty())
   <ul {{ $attributes }}>
