@@ -1,5 +1,3 @@
-@use('Log1x\Navi\Navi')
-
 @props([
   'name' => null,
   'inactive' => 'hover:text-blue-500',
